@@ -1,14 +1,17 @@
 configs = {
-    "device":       "cpu",
-    "lr":           0.001,
-    "batch_size":   32,
-    "log_dir":      "./results",
-    "log_steps":    2,
-    "ckpt_path":    "/Users/rshahbazyan/Desktop/ASDS/DSP-ASDS/Noise-Classification/results/CNN/checkpoints/3.pt",
+    "sample_rate": 16000,
+    "device": "cuda",
+    "audio_len": 2,
+    "lr": 0.0001,
+    "batch_size": 64,
+    "log_dir": "../results",
+    "ckpt_path": "/home/rshahbazyan/Desktop/DL/results/Hubert/checkpoints/11736.pt",
+    "log_steps": 1,
+    "is_hubert": True,
     "model_params": {
-        "mel_dim":      80,
+        "mel_dim": 80,
         "dropout_rate": 0.1,
-        "output_size":  50,
-        "seq_len":      126
+        "output_size": 50,
+        "seq_len": 126
     }
 }
